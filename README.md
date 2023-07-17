@@ -1,0 +1,2 @@
+# Shortest_Path_Algorithm_Visualization
+这是一个用Java实现的最短路径算法的可视化程序，可以通过该程序比较 Dijkstra, Bellman-ford 和 Spfa算法在有向图中可视化的展示不同算法对最短路径的寻找过程。通过一定的格式在程序中输入顶点和边的数据，该程序可以自动生成对应的有向图，具体的输入格式详见本仓库中的txt。
