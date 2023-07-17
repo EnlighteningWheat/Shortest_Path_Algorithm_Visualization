@@ -6,16 +6,16 @@ In order to better understand some algorithms of the shortest path calculationï¼
 	We use three algorithms totally, including Dijkstra, Bellman-ford and Spfa. Because of the single origin we set, we have to give up Floyd algorithm which is designed for multiple origins.
 
 # 2 Technology Introduction
-2.1 Algorithms Achievement
-2.1.1 Dijkstra
+**2.1 Algorithms Achievement**
+**2.1.1 Dijkstra**
 	The main feature of Dijkstra algorithm is to extend from the starting point to the outer layer until the end point.
 	To implement Dijkstra, the node set in Graph is divided into node set S with the shortest path calculation completed and node set T with the uncalculated. Each time, the node vt with the smallest v0->vt from T is selected to be added to S, and the shorter distance between v0 and the remaining nodes in T is updated through vt until all nodes in T are added to S. It's greedy that every time it chooses the node closest to the source to join the shortest path node set. (S an T is a set of examples of name)
-2.1.2 Bellman-ford
+**2.1.2 Bellman-ford**
 	Bellman-ford algorithmâ€™s remarkable feature is that it can find a single source shortest path with negative weight graph, and judge whether there is a negative weight loop or a point with a shortest path in the graph. 
 	In the graph, each point holds a value representing the distance from the origin, setting the value of the origin to 0 and the value of the other points to infinity. And then loop from 1 to n-1 (n equals the number of points in the graph). Inside the loop, all edges are traversed and relaxation calculations are performed. Traverse all the edges on the way, judging whether there is a loop with negative weight reachable from the source. 
-2.1.3 SPFA
+**2.1.3 SPFA**
 	Bellman-Ford algorithm has a high time complexity, because Bellman-Ford needs to recurse for n times, and each recursion needs to scan all edges. In the process of recursion for n times, many judgments are unnecessary, so queue optimization is considered to reduce unnecessary judgments. This algorithm is called SPFA. Maintenance is done using a priority queue, where the source point is initially queued, one vertex is removed from the queue at a time, and all its neighbors are relaxed. If a vertex is successfully relaxed, it is queued, and the process is repeated until the queue is empty
-2.2 Visualization Achievement
+**2.2 Visualization Achievement**
 	JAVA Graphical User Interface
 2.2.1 Graph Outputting
 	Use Graphics from JAVA to draw the graph we want to show. We have positioned the coordinates of the vertexes, edges and their labels already. 
