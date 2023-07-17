@@ -6,7 +6,9 @@ In order to better understand some algorithms of the shortest path calculationï¼
 	We use three algorithms totally, including Dijkstra, Bellman-ford and Spfa. Because of the single origin we set, we have to give up Floyd algorithm which is designed for multiple origins.
 
 # 2 Technology Introduction
+
 **2.1 Algorithms Achievement**
+
 **2.1.1 Dijkstra**
 	The main feature of Dijkstra algorithm is to extend from the starting point to the outer layer until the end point.
 	To implement Dijkstra, the node set in Graph is divided into node set S with the shortest path calculation completed and node set T with the uncalculated. Each time, the node vt with the smallest v0->vt from T is selected to be added to S, and the shorter distance between v0 and the remaining nodes in T is updated through vt until all nodes in T are added to S. It's greedy that every time it chooses the node closest to the source to join the shortest path node set. (S an T is a set of examples of name)
