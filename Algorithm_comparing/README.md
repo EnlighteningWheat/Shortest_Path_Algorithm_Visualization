@@ -1,0 +1,1 @@
+在Painting函数中运行main函数

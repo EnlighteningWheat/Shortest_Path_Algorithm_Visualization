@@ -1,0 +1,23 @@
+vertex s
+vertex a
+vertex b
+vertex c
+vertex d
+vertex e
+vertex f
+vertex t
+edge s a 9
+edge s e 14
+edge s f 15
+edge a b 24
+edge b t 19
+edge b d 2
+edge c b 6
+edge c t 6
+edge d c 11
+edge d t 16
+edge e d 30
+edge e f 5
+edge e b 18
+edge f d 20
+edge f t 44

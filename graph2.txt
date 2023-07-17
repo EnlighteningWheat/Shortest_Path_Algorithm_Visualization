@@ -1,0 +1,15 @@
+vertex a
+vertex b
+vertex c
+vertex d
+vertex e
+vertex f
+edge a e 14
+edge a f 9
+edge a b 7
+edge b c 15
+edge b f 10
+edge c d 6
+edge c f 11
+edge d e 10
+edge f e 2

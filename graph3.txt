@@ -1,0 +1,17 @@
+vertex s
+vertex a
+vertex b
+vertex c
+vertex d
+vertex e
+vertex f
+edge s c 2
+edge s f 6
+edge s a 3
+edge a b 6
+edge a d 1
+edge b e 1
+edge c a 2
+edge c d 4
+edge d e 4
+edge f e 2
